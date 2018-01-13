@@ -1,0 +1,219 @@
+body{
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0 auto;
+}
+body h1{
+	font-family: 'Dosis', sans-serif;
+	font-size: 50px;
+	font-weight: 400;
+	margin: 20px 0 0 0;
+
+}
+
+header{
+	background: #000;
+	color: #fff;
+	background: radial-gradient(#4c4c4c, #000000);
+}
+header p {
+	margin: 0;
+	color: gray;
+}
+h1 span{
+	color: #00C6FF;
+}
+header ul{
+	float: right;
+}
+header ul li{
+	margin-left: 15px;
+	float: left;
+	font-size: 14px;
+	list-style: none;
+	/*list-style-image: url(../images/marker.gif);*/
+}
+header ul li span{
+	padding: 0 4px;
+	background: #008dad;
+	border-radius: 50%;
+	font-size: 9px;
+	margin: 0px 8px 0 0;
+}
+header img{
+	padding: 10px;
+	background: #fff;
+	box-shadow: 0px 15px 35px -12px rgba(0,0,0,0.75);
+}
+header img:nth-child(1), header img:nth-child(3){
+	width: 38%;
+}
+header img:nth-child(2){
+	width: 50%;
+	margin-left: -15%;
+	position: relative;
+	top: 12%;
+}
+header img:nth-child(3){
+	margin-left: -15%;
+}
+.container{
+	width: 80% !important;
+}
+.left{
+	padding-left: 6%;
+}
+.center{
+	text-align: center;
+	padding: 0 !important;
+}
+.active{
+	color: #00C6FF;
+}
+.shortly img{
+	border: 7px solid #fff;
+	width: 90%;
+}
+.text{
+	color: #00d0ff;
+}
+.experiences{
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+.experiences ul span{
+	font-weight: bold;
+}
+.experiences li{
+	list-style-image: url(../images/marker.gif);
+}
+.experiences ul li:nth-child(2){
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+.data p{
+	font-size: 30px;
+	color: #00d0ff;
+	margin: 10px 0px 10px 0;
+	text-align: center;
+}
+.data span{
+	font-size: 50px;
+}
+.news p{
+	margin: 0 0 20px -20px;
+}
+.news-bold{
+	font-weight: bold;
+	text-decoration: underline;
+}
+.button:hover{
+	color: #000
+}
+.button{
+	text-decoration: none;
+	padding: 5px 10px;
+	background: #00d0ff;
+	color: #fff;
+}
+main{
+	padding-top: 80px;
+	background: #EBEBEB;
+	background: radial-gradient(#ffffff, #cccccc);
+}
+main .row, section .row{
+	line-height: 22px;
+	font-size: 14px;
+}
+main h3, section h3{
+	font-size: 32px;
+	font-weight: 400;
+	color: gray;
+	margin-top:0;
+	margin-left: 10px;
+}
+section{
+	background: #4e4e4e;
+	color: #fff;
+}
+.philosophy{
+	border-right: 1px solid gray;
+	margin: 30px 0;
+}
+.philosophy img{
+	border: 7px solid #fff;
+	float: left;
+	margin-right: 30px;
+}
+.philosophy p{
+	padding-right: 30px;
+}
+.soon{
+	margin: 30px 0;
+}
+footer{
+	background: #000;
+	color: gray;
+	font-size: 12px;
+	text-align: center;
+}
+footer p{
+	padding: 30px 0 50px 0;
+}
+.icon{
+	padding-top: 35px;
+}
+.icon div:hover{
+	box-shadow: 0 0 2px 2px #fff
+}
+.icon div{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 7px;
+	background-image: url(../images/SMO.jpg);
+	background-size: 300px;
+	background-repeat: no-repeat;
+}
+.facebook{
+	background-position-x: -15px;
+	background-position-y: -9px;
+}
+.second-icon{
+	background-position-x: -207px;
+	background-position-y: -9px;
+}
+.third-icon{
+	background-position-x: -62px;
+	background-position-y: -133px;
+}
+.four-icon{
+	background-position-x: -62px;
+	background-position-y: -9px;
+}
+.five-icon{
+	background-position-x: -62px;
+	background-position-y: -50px;
+}
+.six-icon{
+	background-position-x: -159px;
+	background-position-y: -50px;
+}
+.d-none{
+	display: none;
+	margin-bottom: 40px;
+}
+.d-block p{
+	margin-bottom: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 767px){
+	.d-none{
+		display: block;
+	}
+	.d-block{
+		display: none !important;
+	}
+	.news p{
+		margin:0 0 30px 0;
+	}
+}
