@@ -1,0 +1,393 @@
+@background-orange:  #EC5425;
+@white: #fff;
+@keyframes drop-down{
+	from{
+		transform: translateY(-100px);
+	}
+	to{
+		transform: translateY(0px);
+	}
+}
+body{
+	user-select: none;
+	hr{
+		width: 50px;
+	}
+	img{
+		width: 100%;
+	}
+	.font-small{
+		font-size: 12px;
+	}
+	h1, h2, h3{
+		font-weight: bold;
+	}
+	header{
+		background: url("../images/home-bg.jpg") no-repeat;
+		background-size: 100%;
+		background-position-y: -40px;
+		.head-one{
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+			text-align: center;
+			background-color: @white;
+			padding: 5px;
+			h2{
+				color: gray;
+			}
+			nav{
+				ul{
+					list-style-type: none;
+					padding: 10px;
+					font-size: 14px;
+					margin: 0;
+					li{
+						display: inline-block;
+						padding: 0 10px;
+						a{
+							text-decoration: none;
+							color: #000;
+						}
+						a:hover{
+							color: #ff6363;
+							text-decoration: underline;
+						}
+					}
+					.active{
+						a{
+							color: red;
+						}
+					}
+				}
+			}
+		}
+		.head-two{
+			text-align: center;
+			h1{
+				padding-top: 15%;
+				padding-bottom: 15%;
+				color:@white;
+			}
+		}
+	}
+	section{
+		background-color: #f5f5f5;
+		text-align: center;
+		.center{
+			width: 75% !important;
+			padding-top: 4%;
+			padding-bottom: 4%;
+		}
+	}
+	.section-one{
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+	.section-two{
+		.column-1{
+			background: @white;
+			padding-bottom: 30px;
+			h3{
+				padding-top: 20%;
+			}
+		}
+		.bg-1{
+			background-color: #313131;
+			color: @white;
+		}
+		.bg-2{
+			background-color: #EC5425;
+			color:@white;
+		}
+		.column-1:hover{
+			background-color: #fff-30;
+		}
+		.bg-1:hover{
+			background-color: #313131-30;
+			i{
+				animation: drop-down .5s;
+			}
+		}
+		.bg-2:hover{
+			background-color: #EC5425-30;
+			i{
+				animation: drop-down .5s;
+			}
+		}
+		.bg-1, .bg-2{
+			overflow: hidden;
+			i{
+				padding-top: 40px;
+			}
+			p{
+				padding-top: 30px;
+				padding-bottom: 30px;
+				a{
+					text-decoration: none;
+					color: @white;
+				}
+				a:hover{
+					color: #fff-50;
+				}
+			}
+		}
+
+	}
+	.section-three{
+		background-image: url("../images/team-bg.jpg");
+		background-size: 100%;
+		background-position-y: -300px;
+		color: @white;
+		h2{
+			padding-top: 50px;
+		}
+		hr{
+			background-color: @white;
+		}
+		.row{
+			.col-md-4{
+				padding: 10px !important;
+				p{
+					background-color: @background-orange;
+					margin-top: -1px;
+					padding: 10px;
+					span{
+						color: #000;
+						font-weight: bold;
+					}
+				}
+			}
+			.col-md-4:hover{
+				p{
+					background-color:  #EC5425-30;
+				}
+			}
+		}
+	}
+	.section-four{
+		h2{
+			padding-top: 50px;
+		}
+		.row{
+			.col-md-3{
+				padding: 10px !important;
+				img{
+					opacity: 0.7;
+				}
+				img:hover{
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.section-five{
+		background-color: @white;
+		h2{
+			padding-top: 50px;
+		}
+		.plans{
+			margin-bottom: 20px;
+			.row:first-child{
+				p{
+					background-color: #d4d4d4;
+					padding: 20px;
+					margin: 0;
+					color: #000;
+					font-weight: bold;
+				}
+			}
+			.row{
+				p{
+					background-color: @background-orange;
+					margin: 0;
+					padding: 12px;
+					color: @white;
+				}
+			}
+			.row:nth-child(2){
+				p{
+					font-size: 10px;
+					margin-bottom: 1px;
+					span{
+						font-size: 32px;
+						font-weight: bold;
+					}
+				}
+			}
+			.row:nth-child(3){
+				p{
+					font-size: 12px;
+					padding: 20px;
+					a{
+						text-decoration: none;
+						color: #000;
+						background: #fff;
+						padding: 10px 20px;
+					}
+					a:hover{
+						box-shadow: 0 0 1px 1px grey;
+						color: #a00;
+					}
+				}
+				p:last-child{
+					padding-bottom: 40px;
+				}
+			}
+		}
+		.plans:hover{
+			.row:first-child{
+				p{
+					background-color: #d4d4d4-30;
+				}
+			}
+			.row{
+				p{
+					background-color: #EC5425-30;
+				}
+			}
+		}
+	}
+	.section-six{
+		background-image: url("../images/contact-bg.jpg");
+		background-size: 100%;
+		background-position-y: center;
+		color: @white;
+		h2{
+			padding-top: 50px;
+		}
+		hr{
+			background-color: @white;
+		}
+		form{
+			width: 100%;
+			label{
+				width: 100%;
+				max-width: 380px;
+				input{
+					width: 100%;
+					border-radius: 4px;
+					border: none;
+					font-size: 10px;
+					padding: 10px;
+				}
+				textarea{
+					width: 100%;
+					height: 100px;
+					resize: none;
+					border-radius: 4px;
+					border: none;
+					font-size: 10px;
+					padding: 10px;
+				}
+				button{
+					width: 100%;
+					border-radius: 4px;
+					border: none;
+					font-size: 10px;
+					padding: 12px;
+					color: @white;
+					background-color: @background-orange;
+				}
+				button:hover{
+					background-color: #EC5425-30;
+				}
+			}
+		}
+	}	
+	.map{
+		padding: 0 !important;
+		iframe{
+			width: 100%;
+			height: 100%;
+			min-height: 250px;
+		}
+	}
+	footer{
+		background-color: #292929;
+		text-align: center;
+		color: @white;
+		h2{
+			margin-top: 80px;
+		}
+		.social-networks{
+			div{
+				display: inline-block;
+				background: #fff;
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				// transition: 0.2s;
+				a{
+					text-decoration: none;
+					color: @background-orange;
+					padding: 10px 8px;
+					i{
+						padding-top: 11px;
+					}
+				}
+			}
+			div:hover{
+				transform: scale(1.1);
+				a{
+					color: #EC5425-50;
+				}
+			}
+		}
+		small{
+			span{
+				a{
+					color: @background-orange;
+				}
+				a:hover{
+					color: @background-orange;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 950px){
+	body{
+		header{
+			.head-one{
+				nav{
+					ul{
+						.active{
+							a{
+								color: #000;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 630px){
+	body{
+		header{
+			background-position-y: 98px;
+			.head-two{
+				padding-top: 150px;
+				h1{
+					font-size: 36px;
+				}
+			}
+		}
+		.section-six{
+			background-size: 200%;
+		}
+	}
+}
+@media screen and (max-width: 360px){
+	body{
+		header{
+			.head-two{
+				padding-top: 130px;
+				h1{
+					font-size: 32px;
+				}
+			}
+		}
+	}
+}
