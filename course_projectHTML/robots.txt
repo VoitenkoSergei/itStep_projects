@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:/js
+Host: r97614iv.beget.tech
+Sitemap: http://r97614iv/beget.tech/sitemap.xml

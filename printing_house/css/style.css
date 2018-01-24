@@ -1,0 +1,314 @@
+@keyframes buttons{
+	from{
+		background-color: orange;
+		box-shadow: 0px 0px 2px black;
+		color: #fff;
+	}
+	50%{
+		background-color: #FFED01;
+		box-shadow: 0px 0px 7px black;
+		color: #000;
+	}
+	to{
+		background-color: orange;
+		box-shadow: 0px 0px 2px black;
+		color: #fff;
+	}
+}
+@keyframes bgr{
+	from{
+		background-position: 0px;
+	}
+	to{
+		background-position: 300px;
+	}
+}
+@keyframes bgr-sub{
+	from{
+		background-position: 192px;
+	}
+	to{
+		background-position: 0px;
+	}
+}
+@keyframes image{
+	from{
+		transform: translate(0px, 0px) scale(1);
+	}
+	25%{
+		transform: translate(40px, 25px) scale(1.2);
+	}
+	50%{
+		transform: translate(80px, 0px) scale(1);
+	}
+	75%{
+		transform: translate(40px, -25px) scale(0.8);
+	}
+	to{
+		transform: translate(0px, 0px) scale(1);
+	}
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+	min-width: 1080px;
+	margin: 0 auto;
+	width: 90%;
+	user-select: none;
+}
+header{
+	background: url(../images/fon.jpg);
+	animation: bgr 25s linear infinite; 
+}
+header img{
+	width: 25%;
+	min-width: 200px;
+	float: left;
+	animation: image 45s linear 0.5s infinite;
+}
+h1{
+	text-align: center;
+	display: inline-block;
+	width: 50%;
+	padding: 30px 10px 40px 10px;
+	margin: 0;
+}
+h1 span{
+	font-size: 42px;
+	font-style: italic;
+}
+h1 span:nth-child(2){
+	color: red;
+}
+h1 span:nth-child(3){
+	color: purple;
+}
+h1 span:last-child{
+	color: blue;
+}
+nav{
+	background: #80FF00;
+}
+nav ul{
+	margin-top: 0;
+	margin-bottom: 0;
+	text-decoration: none;
+	padding: 10px;
+	text-align: right;
+	font-weight: 600;
+}
+nav ul .visited{
+	background: linear-gradient(to top, yellow, #fa5c1c);
+}
+nav ul li{
+	display: inline-block;
+	padding: 5px 10px;
+	background: #c9ff83;
+	margin: 0 6px;
+	transition: background 0.5s;
+}
+nav ul li:hover{
+	box-shadow: 0px 0px 2px black;
+	background-color: #666;
+}
+nav ul li:hover a{
+	color: #fff;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+	transition: color 0.5s;
+}
+address{
+	width: 21%;
+	float: right;
+	margin-top: 30px;
+	text-align: right;
+	padding: 0 20px 5px 0;
+}
+address span{
+	color: red;
+	font-weight: bold;
+}
+address span:nth-child(3){
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+address form{
+	margin-top: 20px;
+}
+address form input{
+	width: 55%;
+	border: 1px solid gray;
+}
+address form input:hover{
+	border: 1px solid blue;
+}
+address form button{
+	background: orange;
+}
+main{
+	margin-top: 30px;
+	width: 75%;
+	float: left;
+}
+main img{
+	float: left;
+	margin-left: 20px;
+	margin-right: 10px;
+	transition: transform 1s;
+}
+main img:hover{
+	cursor: -webkit-zoom-in;
+	cursor: -o-zoom-in;
+	cursor: -ms-zoom-in;
+	cursor: -moz-zoom-in;
+}
+main div{
+	display: inline-block;
+	width: 70%;
+}
+main div h2{
+	margin: 0;
+	color: orange;
+}
+main p{
+	margin-top: 5px;
+	line-height: 20px;
+	padding: 0 25px 0 25px;
+}
+main .zoom{
+	clear: both;
+    float: left;
+    font-size: 9px;
+}
+.visitka p{
+	
+}
+.visitka p:last-child{
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.visitka .price{
+	text-align: center;
+	font-weight: bold;
+}
+main .red{
+	color: red;
+	text-align: center;
+	font-size: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.visitka span{
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+}
+main h3{
+	color: gray;
+	font-size: 24px;
+	text-align: center;
+}
+main ul{
+	margin-left: 20px;
+}
+main .image{
+	text-align: center;
+	width: 100%;
+}
+main .image img{
+	float: none;
+	width: 45%;
+}
+.buklet .image img{
+	width: 30%;
+}
+.plakat .image img{
+	width: 36%;
+	margin: 6px;
+}
+.books .image img{
+	width: 69%;
+}
+.large{
+	transform: translateX(100px) scale(3);
+	z-index: 1;
+}
+.large:hover{
+	cursor: -webkit-zoom-out;
+	cursor: -o-zoom-out;
+	cursor: -ms-zoom-out;
+	cursor: -moz-zoom-out;
+}
+.sub{
+	transform: scale(1.5);
+}
+.sub:hover{
+    cursor: -webkit-zoom-out;
+	cursor: -o-zoom-out;
+	cursor: -ms-zoom-out;
+	cursor: -moz-zoom-out;
+}
+article{
+	text-align: center;
+	width: 25%;
+	float: right;
+	background: linear-gradient(to right, #C3FAFD, #fff);
+	margin-bottom: 20px;
+}
+article h2{
+	background: url(../images/fon2.gif);
+	color: #fff;
+	margin-bottom: 0;
+}
+article:hover h2{
+    animation: bgr-sub 10s linear infinite;
+}
+article div{
+	border-bottom: 2px dashed blue;
+	margin-top: 30px;
+}
+article div img{
+	width: 40%;
+	transition: 1s;
+}
+article input{
+	margin: 15px;
+	padding: 5px;
+	background: orange;
+	color: #fff;
+}
+article div:hover input{
+	animation: buttons 2.4s infinite;
+	box-shadow: 0px 0px 2px #000;
+}
+article div:hover img{
+	box-shadow: 0px 0px 4px blue;
+	transform: scale(1.1);
+}
+article div:hover h3{
+	color: orange;
+}
+article h3{
+	color: blue;
+	margin-bottom: 0;
+}
+article span{
+	color: gray;
+}
+article div:last-child{
+	margin-bottom: 100px;
+}
+footer{
+	clear: both;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #C3FAFD;
+	padding: 10px;
+}
