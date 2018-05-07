@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<table id="main">
+					<tr>
+						<th>Комбинация</th>
+						<th>Описание</th>
+						<th>Выиграш</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="./images/pearl.gif" alt="">
+							<img src="./images/pearl.gif" alt="">
+							<img src="./images/pearl.gif" alt="">
+						</td>
+						<td>Три жемчюжены</td>
+						<td>800 к 1</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="./images/shark.gif" alt="">
+							<img src="./images/shark.gif" alt="">
+							<img src="./images/shark.gif" alt="">
+						</td>
+						<td>Три акулы</td>
+						<td>200 к 1</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="./images/octopus.gif" alt="">
+							<img src="./images/octopus.gif" alt="">
+							<img src="./images/octopus.gif" alt="">
+						</td>
+						<td>Три осьменога</td>
+						<td>80 к 1</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="./images/fish.gif" alt="">
+							<img src="./images/fish.gif" alt="">
+							<img src="./images/fish.gif" alt="">
+						</td>
+						<td>Три рыбы</td>
+						<td>40 к 1</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="./images/shell.gif" alt="">
+							<img src="./images/shell.gif" alt="">
+							<img src="./images/shell.gif" alt="">
+						</td>
+						<td>Три пакушки</td>
+						<td>20 к 1</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="./images/any3x.gif" alt="">
+							<img src="./images/star-magenta.gif" alt="">
+							<img src="./images/star-red.gif" alt="">
+						</td>
+						<td>Три звезды любого цвета</td>
+						<td>10 к 1</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="./images/any2x.gif" alt="">
+							<img src="./images/star-magenta.gif" alt="">
+							<img src="./images/star-red.gif" alt="">
+						</td>
+						<td>Две звезды любого цвета</td>
+						<td>5 к 1</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="./images/any1x.gif" alt="">
+							<img src="./images/star-magenta.gif" alt="">
+							<img src="./images/star-red.gif" alt="">
+						</td>
+						<td>Одна звезда любого цвета</td>
+						<td>2 к 1</td>
+					</tr>	
+				</table>
+			</td>
+			<td>
+				<h2>Money</h2>
+				<p id="money">100</p>
+				<h2>На кону</h2>
+				<p id="stavka">
+					<input type="number" name="number" min="0" max="100" step="10" value="0">
+				</p>
+				<p>
+					<img id="f1" src="./images/star-red.gif" alt="">
+					<img id="f2" src="./images/star-red.gif" alt="">
+					<img id="f3" src="./images/star-red.gif" alt="">
+				</p>
+				<h2>Выигрыш</h2>
+				<h2 id="prize">Ничего</h2>
+				<button id="btn">ИГРАТЬ</button>
+			</td>
+		</tr>
+	</table>
+	<div id="sessions"></div>
+	<script src="./script/main.js"></script>
+</body>
+</html>

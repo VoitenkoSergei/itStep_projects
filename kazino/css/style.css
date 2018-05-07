@@ -1,0 +1,30 @@
+body {
+  background-color: #7070fe;
+}
+body table {
+  border-collapse: collapse;
+  background: #7070ff;
+  margin: 0 auto;
+}
+body table tr th {
+  background-color: yellow;
+  border: 2px solid #fff;
+  padding: 0 10px;
+  color: red;
+}
+body table tr td {
+  border: 2px solid #fff;
+  padding: 3px 8px;
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+}
+body table tr td button {
+  padding: 5px 8px;
+  background: #ff3939;
+  color: #fff;
+}
+body #main td:nth-child(2),
+body #main td:nth-child(3) {
+  background-color: #26a5ff;
+}
