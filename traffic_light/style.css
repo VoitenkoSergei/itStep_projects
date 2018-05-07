@@ -1,0 +1,21 @@
+div{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: linear-gradient(to top, #424242, #000000);
+	margin: 10px;
+	transition: .5s;
+	margin-left: 96px;
+	margin-bottom: 8px;
+	box-shadow: 0 0 5px 3px grey;
+}
+body{
+	background: url(./svetofor.png) no-repeat;
+	background-size: contain;
+	background-position: -30px -28px;
+}
+@media screen and (max-width: 365px){
+	body{
+		background-size: cover;
+	}
+}
